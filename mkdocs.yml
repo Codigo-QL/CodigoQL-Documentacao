@@ -1,0 +1,48 @@
+site_name: Código-QL - Documentação para Colaboradores
+site_author: Natan Tavares Santana
+site_description: 'Documentação oficial para o desenvolvimento e contribuição com a plataforma educacional Código-QL, um TCC do curso de Engenharia de Software da UnB.'
+
+theme:
+  name: material
+  language: pt
+  logo: assets/codigoql.png
+  favicon: assets/codigoql.png
+  palette:
+    - scheme: default
+      primary: 62A6F5
+      accent: light-green
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para o modo escuro
+    - scheme: slate
+      primary: 62A6F5
+      accent: light-green
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para o modo claro
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+# Repositório
+repo_name: 'Codigo-QL/CodigoQL-Documentacao'
+repo_url: 'https://github.com/Codigo-QL/CodigoQL-Documentacao'
+
+# Navegação
+nav:
+  - 'Início': 'index.md'
+  - 'Licença': 'license.md'
+  - 'Como Contribuir': 'contributing.md'
+  - 'Adicionando Conteúdo': 'tutorial.md'
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - toc:
+      permalink: true
