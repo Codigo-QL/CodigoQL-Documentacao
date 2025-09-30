@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - feat/US8
 
 permissions:
   contents: write
